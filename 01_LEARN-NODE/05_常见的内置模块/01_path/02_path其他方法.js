@@ -19,5 +19,11 @@ console.log(filepath1)
 
 // resolve路径拼接
 // resolve会判断拼接的路径字符串中，是否有以/或../开头的路径
-const filepath2 = path.resolve(basepath,filename,othername);
-console.log(filepath2);
+// const filepath2 = path.resolve(basepath,filename,othername);
+// console.log(filepath2);
+
+const basepath2 = '/User/coderwhy';
+// const filename2 = '/why/abc.txt';
+const filename2 = './why/abc.txt'
+const result = path.resolve(basepath2,filename2);
+console.log(result)
